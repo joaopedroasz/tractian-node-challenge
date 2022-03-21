@@ -7,7 +7,7 @@ export class Asset {
   private readonly description: string
   private readonly model: string
   private owner?: Unit
-  private readonly status: AssetStatusTypes
+  private status: AssetStatusTypes
 
   constructor ({
     id,
@@ -25,5 +25,9 @@ export class Asset {
 
   public setOwner(owner: Unit): void {
     this.owner = owner
+  }
+
+  public setStatus(status: AssetStatusTypes) {
+    this.status = status
   }
 }
