@@ -1,0 +1,7 @@
+{
+  "name": "tractian-challenge",
+  "version": "1.0.0",
+  "main": "src/main/server/index.ts",
+  "author": "João Pedro <joao.pedroasz00@gmail.com>",
+  "license": "MIT"
+}
