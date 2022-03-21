@@ -1,11 +1,12 @@
 import { AssetStatusTypes, AssetsProps } from './types/Asset'
+import { Unit } from './Unit'
 
 export class Asset {
   private readonly id?: string
   private readonly image: string
   private readonly description: string
   private readonly model: string
-  private readonly owner: string
+  private owner?: Unit
   private readonly status: AssetStatusTypes
 
   constructor ({
@@ -13,14 +14,16 @@ export class Asset {
     image,
     description,
     model,
-    owner,
     status
   }: AssetsProps) {
     this.id = id
     this.image = image
     this.description = description
     this.model = model
-    this.owner = owner
     this.status = status
+  }
+
+  public setOwner(owner: Unit): void {
+    this.owner = owner
   }
 }

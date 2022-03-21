@@ -5,6 +5,5 @@ export type AssetsProps = {
   image: string
   description: string
   model: string
-  owner: string
   status: AssetStatusTypes
 }

@@ -5,7 +5,7 @@ export class Unit {
   private readonly id?: string
   private readonly name: string
   private readonly description: string
-  private readonly assets: Asset[]
+  private assets: Asset[]
 
   constructor ({
     id,
@@ -16,6 +16,10 @@ export class Unit {
     this.name = name
     this.description = description
     this.assets = []
+  }
+
+  public getAssets(): Asset[] {
+    return this.assets
   }
 
   public addAsset(asset: Asset): void {

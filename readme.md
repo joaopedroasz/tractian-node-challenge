@@ -58,3 +58,9 @@ This project aims to resolve a challenge for Backend developer job opportunity.
   - Name;
   - E-mail;
   - Company;
+
+### Regras de negócio:
+
+- Criação de entidades:
+  - As entidades serão individuais. Exemplo: Para criar um usuário, não é preciso ter uma empresa cadastrada;
+  - Uma vez instanciadas as entidades, é possível adicionar/"setar" suas dependências relacionais. Exemplo: Eu posso criar um usuário e somente depois atribuir uma empresa para ele;
