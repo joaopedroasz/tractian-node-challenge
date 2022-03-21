@@ -34,7 +34,7 @@ This project aims to resolve a challenge for Backend developer job opportunity.
   - Name;
   - Description;
   - Unities (Many of unit);
-  - Users (Many of user);
+  - Employees (Many of user);
 
 - Unit:
   - Name;
@@ -59,8 +59,14 @@ This project aims to resolve a challenge for Backend developer job opportunity.
   - E-mail;
   - Company;
 
-### Regras de negócio:
+### Business Rules:
 
-- Criação de entidades:
-  - As entidades serão individuais. Exemplo: Para criar um usuário, não é preciso ter uma empresa cadastrada;
-  - Uma vez instanciadas as entidades, é possível adicionar/"setar" suas dependências relacionais. Exemplo: Eu posso criar um usuário e somente depois atribuir uma empresa para ele;
+- Entity creation:
+  - Entities are individual. Example: To create a user, isn't need to have a company created;
+  - Is possible to change entities relational dependencies after create one. Example: I can create a user and after set his company;
+
+- Entities views:
+  - Company:
+    - View company data;
+    - View unit data:
+      - Don't show all assets from each unit, but the number of assets;
