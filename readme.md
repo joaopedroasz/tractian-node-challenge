@@ -57,16 +57,28 @@ This project aims to resolve a challenge for Backend developer job opportunity.
 - User:
   - Name;
   - E-mail;
-  - Company;
 
 ### Business Rules:
 
 - Entity creation:
-  - Entities are individual. Example: To create a user, isn't need to have a company created;
-  - Is possible to change entities relational dependencies after create one. Example: I can create a user and after set his company;
+  - Entities are individual. Example: To create a unit, isn't need to have a asset created;
+  - Is possible to change entities relational dependencies after create one. Example: I can create a company and after set its employees;
 
-- Entities views:
+- Entities view:
   - Company:
     - View company data;
+    - Don't show all users from company, but the number of users;
     - View unit data:
       - Don't show all assets from each unit, but the number of assets;
+
+### Use cases:
+
+- [] Create a company;
+- [] Insert user in company;
+- [] Create an unit;
+- [] Insert many assets in unit;
+- [] Create a asset;
+- [] Change status of an asset;
+- [] Get info from company;
+- [] Get info from unit;
+- [] Get info from asset;
