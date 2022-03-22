@@ -33,7 +33,7 @@ This project aims to resolve a challenge for Backend developer job opportunity.
 - Companies:
   - Name;
   - Description;
-  - Unities (Many of unit);
+  - units (Many of unit);
   - Employees (Many of user);
 
 - Unit:

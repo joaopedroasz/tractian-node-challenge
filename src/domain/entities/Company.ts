@@ -6,7 +6,7 @@ export class Company {
   private readonly id?: string
   private readonly name: string
   private readonly description: string
-  private unities: Unit[]
+  private units: Unit[]
   private employees: User[]
 
   constructor ({
@@ -17,12 +17,12 @@ export class Company {
     this.id = id
     this.name = name
     this.description = description
-    this.unities = []
+    this.units = []
     this.employees = []
   }
 
   public addUnit(unit: Unit) {
-    this.unities.push(unit)
+    this.units.push(unit)
   }
 
   public addEmployee(employee: User) {
