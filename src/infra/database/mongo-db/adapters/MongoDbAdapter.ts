@@ -16,6 +16,11 @@ export class MongoDatabaseAdapter implements DatabaseConnection {
     this.client = undefined
   }
 
+  public async createCollection(name: string): Promise<void> {
+    if (!this.client) return
+    await this.client.db().createCollection(name)
+  }
+
   public getCollection (collectionName: string): Collection | undefined {
     if (!this.client) return
     return this.client.db().collection(collectionName)

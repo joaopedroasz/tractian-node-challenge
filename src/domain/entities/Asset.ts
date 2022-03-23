@@ -1,8 +1,9 @@
+import { randomUUID } from 'crypto'
 import { AssetStatusTypes, AssetsProps } from './types/Asset'
 import { Unit } from './Unit'
 
 export class Asset {
-  private readonly id?: string
+  private readonly id: string
   private readonly image: string
   private readonly description: string
   private readonly model: string
@@ -16,7 +17,7 @@ export class Asset {
     model,
     status
   }: AssetsProps) {
-    this.id = id
+    this.id = id ?? randomUUID()
     this.image = image
     this.description = description
     this.model = model
