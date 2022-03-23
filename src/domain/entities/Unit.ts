@@ -1,8 +1,9 @@
 import { Asset } from "./Asset"
 import { UnitProps } from './types/unit'
+import { randomUUID } from 'crypto'
 
 export class Unit {
-  private readonly id?: string
+  private readonly id: string
   private readonly name: string
   private readonly description: string
   private assets: Asset[]
@@ -12,10 +13,18 @@ export class Unit {
     name,
     description
   }: UnitProps) {
-    this.id = id
+    this.id = id ?? randomUUID()
     this.name = name
     this.description = description
     this.assets = []
+  }
+
+  public getId(): string {
+    return this.id
+  }
+
+  public hasId(): boolean {
+    return Boolean(this.id)
   }
 
   public getAssets(): Asset[] {
