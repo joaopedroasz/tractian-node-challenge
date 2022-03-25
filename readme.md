@@ -73,11 +73,11 @@ This project aims to resolve a challenge for Backend developer job opportunity.
 
 ### Use cases:
 
-- [] Create a company;
-- [] Insert user in company;
+- [x] Create a company;
 - [] Create an unit;
+- [] Create an asset;
+- [] Insert user in company;
 - [] Insert many assets in unit;
-- [] Create a asset;
 - [] Change status of an asset;
 - [] Get info from company;
 - [] Get info from unit;

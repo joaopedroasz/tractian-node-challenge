@@ -7,13 +7,12 @@ import { CreateCompanyController } from "@/presentation/controllers/CreateCompan
 import { Router } from "express";
 import { RouterAdapterExpress } from "../../adapters/RouterAdapterExpress";
 import { Route } from "../../contracts/Route";
-import { RouterAdapter } from "../../contracts/RouterAdapter";
 
-export class CreateCompanyRouter implements Route {
+export class CreateCompanyRouter extends Route {
   constructor (
-    private readonly router: Router
+    readonly router: Router
   ) {
-    this.setupRoute()
+    super(router)
   }
 
   public async setupRoute(): Promise<Router> {

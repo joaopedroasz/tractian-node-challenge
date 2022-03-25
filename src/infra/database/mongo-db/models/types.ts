@@ -4,3 +4,9 @@ export type CompanyModelProps = {
   unitsIds: string[]
   employeesIds: string[]
 }
+
+export type UnitModelProps = {
+  name: string
+  description: string
+  assetsIds: string[]
+}

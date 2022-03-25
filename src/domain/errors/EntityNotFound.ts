@@ -4,8 +4,6 @@ export class EntityNotFoundError extends Error {
     entityPropertyUsedToSearching: string,
     propertyValue: string
   ) {
-    super(`
-      ${entityName} with ${entityPropertyUsedToSearching} equal to ${propertyValue} was not found
-    `)
+    super(`${entityName} with ${entityPropertyUsedToSearching} equal to ${propertyValue} was not found`)
   }
 }

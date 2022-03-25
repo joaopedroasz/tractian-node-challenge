@@ -24,6 +24,10 @@ export class Asset {
     this.status = status
   }
 
+  public getId(): string {
+    return this.id
+  }
+
   public setOwner(owner: Unit): void {
     this.owner = owner
   }

@@ -1,4 +1,4 @@
-import { CompanyModelProps } from "./types/company"
+import { CompanyModelProps } from "./types"
 
 export class CompanyModel {
   public readonly name: string
