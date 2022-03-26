@@ -74,8 +74,11 @@ This project aims to resolve a challenge for Backend developer job opportunity.
 ### Use cases:
 
 - [x] Create a company;
-- [] Create an unit;
-- [] Create an asset;
+- [x] Create an unit;
+- [x] Create an asset;
+
+### Next Steps:
+
 - [] Insert user in company;
 - [] Insert many assets in unit;
 - [] Change status of an asset;
